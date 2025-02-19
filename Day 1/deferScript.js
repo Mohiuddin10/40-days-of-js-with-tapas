@@ -1,0 +1,1 @@
+document.getElementById("defer-test-area").innerText = "Hello from deferScript.js";
