@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="day4"></h2>
+    <div id="switchTest">
+        <h2>Task about Switch</h2>
+        <p id="result"></p>
+        <p id="explanation">As there is a difference in Monday and monday</p>
+        <hr>
+    </div>
+    <!-- ATM Cash Withdrawal System  -->
+    <div id="atm">
+        <h2>Hello Rajan, welcome to Axis bank ATM</h2>
+        <p>Enter the amount you want to withdraw</p>
+        <input type="number" id="amount" placeholder="Enter the amount">
+        <button onclick="atm()">Withdraw</button>
+        <p id="result2"></p>
+        <hr>
+    </div>
+    <!-- Calculator with switch-case  -->
+     <div class="">
+        <h2>Calculator with switch-case</h2>
+        <input type="number" id="num1" placeholder="Enter the first number">
+        <input type="number" id="num2" placeholder="Enter the second number">
+        <select id="operator">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="mul">Multiply</option>
+            <option value="div">Divide</option>
+            <option value="rem">Reminder</option>
+        </select>
+        <button onclick="calculator()">Calculate</button>
+        <p id="result3"></p>
+        <hr>
+     </div>
+
+     <!-- Pay for your movie ticket  -->
+    <div class="">
+        <h2>Welcome to INOX movies</h2>
+        <input type="number" id="age" placeholder="Enter your age">
+        <button onclick="ticketPrice()">Check Price of your Ticket</button>
+        <h4 id="ticketPrice"></h4>
+        <button onclick="movieTicket()">Pay</button>
+        <p id="result4"></p>
+        <hr>
+    </div>
+</body>
+</html>
