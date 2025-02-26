@@ -64,3 +64,65 @@ const ticketPrice = (age) => {
         document.getElementById("ticketPrice").innerText = "Please contact the counter for price";
     }
 }
+
+const handleHoroscope = () => {
+    let month = document.getElementById("month").value;
+    switch (month) {
+        case "jan":
+            document.getElementById("result5").innerText = "♑ Capricornus (Goat) or ♒ Aquarius (Water Bearer)";
+            break;
+        case "feb":
+            document.getElementById("result5").innerText = "♒ Aquarius (Water Bearer) or ♓ Pisces (Fish)";
+            break;
+        case "mar":
+            document.getElementById("result5").innerText = "♓ Pisces (Fish) or ♈ Aries (Ram)";
+            break;
+        case "apr":
+            document.getElementById("result5").innerText = "♈ Aries (Ram) or ♉ Taurus (Bull)";
+            break;
+        case "may":
+            document.getElementById("result5").innerText = "♉ Taurus (Bull) or ♊ Gemini (Twins)";
+            break;
+        case "jun":
+            document.getElementById("result5").innerText = "♊ Gemini (Twins) or ♋ Cancer (Crab)";
+            break;
+        case "jul":
+            document.getElementById("result5").innerText = "♋ Cancer (Crab) or ♌ Leo (Lion)";
+            break;
+        case "aug":
+            document.getElementById("result5").innerText = "♌ Leo (Lion) or ♍ Virgo (Virgin)";
+            break;
+        case "sep":
+            document.getElementById("result5").innerText = "♍ Virgo (Virgin) or ♎ Libra (Balance)";
+            break;
+        case "oct":
+            document.getElementById("result5").innerText = "♎ Libra (Balance) or ♏ Scorpius (Scorpion)";
+            break;
+        case "nov":
+            document.getElementById("result5").innerText = "♏ Scorpius (Scorpion) or ♐ Sagittarius (Archer)";
+            break;
+        case "dec":
+            document.getElementById("result5").innerText = "♐ Sagittarius (Archer) or ♑ Capricornus (Goat)";
+            break;
+        default:
+            document.getElementById("result5").innerText = "Invalid Data";
+            break;
+    }
+}
+
+const handleTriangle = () => {
+    let fisrtSides = parseInt(document.getElementById("fisrtSides").value);
+    let secoundSides = parseInt(document.getElementById("secoundSides").value);
+    let thirdSides = parseInt(document.getElementById("thirdSides").value);
+    if (fisrtSides === secoundSides && secoundSides === thirdSides) {
+        document.getElementById("result6").innerText = "Equilateral Triangle"
+    }
+    else if (fisrtSides === secoundSides && secoundSides !== thirdSides) {
+        document.getElementById("result6").innerText = "Isosceles Triangle"
+    }
+    else if (fisrtSides !== thirdSides && secoundSides !== thirdSides) {
+        document.getElementById("result6").innerText = "Scalene Triangle"
+    } else {
+        document.getElementById("result6").innerText = "Isosceles Triangle"
+    }
+}
