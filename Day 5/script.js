@@ -1,4 +1,4 @@
-document.getElementById("intro").innerText = "Welcome to Day 5 of JS advanture"; 
+document.getElementById("intro").innerText = "Welcome to Day 5 of JS advanture";
 
 
 // task 1 
@@ -12,7 +12,7 @@ for (let i = 1; i <= 10; i++) {
 
 // task 2 
 let number = 3;
-for (let i =1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
     console.log(`${number} * ${i} = ${number * i}`);
 }
 
@@ -36,10 +36,18 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // task 5 
-let revNumber = 0;
 
-while (number > 0) {
-    let digit = number % 10;
-    revNumber = revNumber * 10 + digit;
-    console.log(revNumber);
+function reverseNumber(num) {
+    let reversed = 0;
+
+    while (num > 0) {
+        let digit = num % 10;
+        num = Math.floor(num / 10);
+        reversed = reversed * 10 + digit;
+
+    }
+
+    return reversed;
 }
+
+console.log(reverseNumber(12345));
