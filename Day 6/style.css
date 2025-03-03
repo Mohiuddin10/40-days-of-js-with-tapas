@@ -1,0 +1,7 @@
+#day6 {
+    color: orangered;
+
+    &:hover {
+        color: orange;
+    }
+}
